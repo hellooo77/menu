@@ -132,7 +132,7 @@
     // 언어(메뉴)별 이미지 경로를 여기에 넣어주세요.
     // 이미지 준비가 완료되면 각 값을 실제 파일 경로로 바꾸면 됩니다.
     const menuImages = {
-      en: "images/menu-en.png",
+      en: "gemini.png",
       jp: "images/menu-jp.png",
       cn: "images/menu-cn.png",
     };
@@ -140,22 +140,16 @@
     const buttons = document.querySelectorAll(".menu-btn");
     const menuFrame = document.getElementById("menuFrame");
 
-    function showMenu(key) {
-      // 활성 버튼 표시
-      buttons.forEach((btn) => {
-        btn.classList.toggle("active", btn.dataset.menu === key);
-      });
+function showMenu(key) {
+  buttons.forEach((btn) => {
+    btn.classList.toggle("active", btn.dataset.menu === key);
+  });
 
-      const src = menuImages[key];
+  const src = menuImages[key];
 
-      // 이미지가 아직 준비되지 않았으므로 우선 텍스트로 표시
-      // 실제 이미지 파일을 넣은 후에는 아래 주석의 코드로 교체하세요.
-      menuFrame.innerHTML = `<span class="placeholder">이미지 (${key})</span>`;
-
-      /* 이미지 파일 준비 후 사용할 코드:*/
-      menuFrame.innerHTML = `<img src="${src}" alt="${key} 메뉴">`;
-      
-    }
+  // 이미지 표시
+  menuFrame.innerHTML = `<img src="${src}" alt="${key} 메뉴">`;
+}
 
     buttons.forEach((btn) => {
       btn.addEventListener("click", () => showMenu(btn.dataset.menu));
