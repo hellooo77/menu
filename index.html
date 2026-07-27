@@ -118,7 +118,7 @@
     <nav>
       <button class="menu-btn active" data-menu="kr">EN</button>
       <button class="menu-btn" data-menu="jp">日本語</button>
-      <button class="menu-btn" data-menu="ch">中文</button>
+      <button class="menu-btn" data-menu="cn">中文</button>
     </nav>
   </header>
 
@@ -150,10 +150,10 @@
 
       // 이미지가 아직 준비되지 않았으므로 우선 텍스트로 표시
       // 실제 이미지 파일을 넣은 후에는 아래 주석의 코드로 교체하세요.
-      menuFrame.innerHTML = `<span class="placeholder">이미지 (${key})</span>`;
+      /*menuFrame.innerHTML = `<span class="placeholder">이미지 (${key})</span>`;*/
 
       /* 이미지 파일 준비 후 사용할 코드:*/
-      menuFrame.innerHTML = `<img src=gemini.png"${src}" alt="${key} 메뉴">`;
+      menuFrame.innerHTML = `<img src="gemini.png"${src}" alt="${key} 메뉴">`;
       
     }
 
