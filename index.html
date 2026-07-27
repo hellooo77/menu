@@ -124,7 +124,6 @@
 
   <main>
     <div class="menu-frame" id="menuFrame">
-      <img src="gemini.png">
       <span class="placeholder" id="menuContent">이미지</span>
     </div>
   </main>
@@ -153,9 +152,9 @@
       // 실제 이미지 파일을 넣은 후에는 아래 주석의 코드로 교체하세요.
       menuFrame.innerHTML = `<span class="placeholder">이미지 (${key})</span>`;
 
-      /* 이미지 파일 준비 후 사용할 코드:
-      menuFrame.innerHTML = `<img src="${src}" alt="${key} 메뉴">`;
-      */
+      /* 이미지 파일 준비 후 사용할 코드:*/
+      menuFrame.innerHTML = `<img src=gemini.png"${src}" alt="${key} 메뉴">`;
+      
     }
 
     buttons.forEach((btn) => {
