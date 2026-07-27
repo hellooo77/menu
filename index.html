@@ -114,9 +114,9 @@
 <body>
 
   <header>
-    <div class="logo">로고이미지</div>
+    <div class="logo">나복집</div>
     <nav>
-      <button class="menu-btn active" data-menu="kr">EN</button>
+      <button class="menu-btn active" data-menu="en">EN</button>
       <button class="menu-btn" data-menu="jp">日本語</button>
       <button class="menu-btn" data-menu="cn">中文</button>
     </nav>
@@ -132,9 +132,9 @@
     // 언어(메뉴)별 이미지 경로를 여기에 넣어주세요.
     // 이미지 준비가 완료되면 각 값을 실제 파일 경로로 바꾸면 됩니다.
     const menuImages = {
-      kr: "images/menu-kr.png",
       en: "images/menu-en.png",
       jp: "images/menu-jp.png",
+      cn: "images/menu-cn.png",
     };
 
     const buttons = document.querySelectorAll(".menu-btn");
@@ -153,7 +153,7 @@
       menuFrame.innerHTML = `<span class="placeholder">이미지 (${key})</span>`;
 
       /* 이미지 파일 준비 후 사용할 코드:*/
-      menuFrame.innerHTML = `<img src=gemini.png"${src}" alt="${key} 메뉴">`;
+      menuFrame.innerHTML = `<img src="${src}" alt="${key} 메뉴">`;
       
     }
 
