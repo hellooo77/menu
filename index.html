@@ -42,8 +42,9 @@
     letter-spacing: 1px;
     color: var(--text);
     /* 로고 이미지 준비되면 아래처럼 교체하세요:*/
-       <img src="logo.png" alt="나복집 로고" class="logo-img">
-    
+     <div class="logo">
+  <img src="logo.png" alt="나복집 로고" class="logo-img">
+</div>
   }
 
   nav {
@@ -89,7 +90,12 @@
     align-items: center;
     justify-content: center;
   }
-
+    
+.logo-img {
+  height: 36px;      /* 원하는 높이로 조절 (헤더에 맞게) */
+  width: auto;
+  display: block;
+  
   .menu-frame img {
     width: 100%;
     height: auto;
@@ -136,8 +142,8 @@
     // 이미지 준비가 완료되면 각 값을 실제 파일 경로로 바꾸면 됩니다.
     const menuImages = {
       en: "en.png",
-      jp: "images/menu-jp.png",
-      cn: "images/menu-cn.png",
+      jp: "jp.png",
+      cn: "cn.png",
     };
 
     const buttons = document.querySelectorAll(".menu-btn");
