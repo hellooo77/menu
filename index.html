@@ -77,16 +77,24 @@
     padding: 0;
   }
 
-  .menu-frame {
-    width: 100%;
-    max-width: 100%;
-    min-height: calc(100vh - 80px);
-    background: transparent;
-    border: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.menu-frame {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  min-height: 640px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-frame img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
     
 .logo-img {
   height: 36px;      /* 원하는 높이로 조절 (헤더에 맞게) */
@@ -115,7 +123,7 @@
     font-size: 14px;
   }
   .menu-frame {
-    max-width: 280px;   /* 원하는 크기로 숫자 조절 */
+    max-width: 90%;   /* 원하는 크기로 숫자 조절 */
     margin: 0 auto;
   }
 }
